@@ -1,0 +1,42 @@
+ fun main() {
+        
+    var sehir = "Yalova"
+    var ulke = "Türkiye"
+    var telefon = 123456
+    val pk = 77500
+    var mail = "oguzarslan@gmail"
+    var meslek = "Yazılımcı"
+    var stokDurum = true
+    val bakiye = 10.25
+    val dogumGunu = "09.06.2000"
+    var medeniDurum = "Bekar"
+    var model = "Mercedes"
+    var resim = "fb.jpeg"
+    var renk = "siyah"
+    val ağırlık = 85
+    val ulusal = "23 Nisan"
+    val sokak = "Yekpare"
+    val hat = "KM11"
+    var rez = "10.07.2025"
+
+    println("sehir : $sehir")
+    println("ulke: $ulke")
+    println("telefon: $telefon")
+    println("pk: $pk")
+    println("mail: $mail")
+    println("meslek: $meslek")
+    println("stokDurum: $stokDurum")
+    println("bakiye: $bakiye")
+    println("dogumGunu: $dogumGunu")
+    println("medeniDurum: $medeniDurum")
+    println("model: $model")
+    println("resim: $resim")
+    println("renk: $renk")
+    println("ağırlık: $ağırlık")
+    println("ulusal: $ulusal")
+    println("sokak: $sokak")
+    println("hat: $hat")
+    println("rez: $rez")
+    
+    }
+  
