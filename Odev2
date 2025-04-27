@@ -1,0 +1,36 @@
+fun icAcilarToplami(kenarSayisi: Int): Int {
+    return (kenarSayisi - 2) * 180
+}
+
+fun maasHesapla(gunSayisi: Int): Int {
+    val saatlikUcret = 10
+    val mesaiSaatlikUcret = 20
+    val gunlukCalismaSaati = 8
+
+    val toplamSaat = gunSayisi * gunlukCalismaSaati
+    return if (toplamSaat <= 160) {
+        toplamSaat * saatlikUcret
+    } else {
+        val normalSaatler = 160
+        val mesaiSaatleri = toplamSaat - 160
+        (normalSaatler * saatlikUcret) + (mesaiSaatleri * mesaiSaatlikUcret)
+    }
+}
+
+fun internetUcreti(kullanilanGb: Int): Int {
+    val kota = 50
+    val kotaUcreti = 100
+    val asimUcretiPerGb = 4
+
+    return if (kullanilanGb <= kota) {
+        kotaUcreti
+    } else {
+        kotaUcreti + ((kullanilanGb - kota) * asimUcretiPerGb)
+    }
+}
+
+fun main() {
+    println(icAcilarToplami(5)) // 540
+    println(maasHesapla(22))     // 1840
+    println(internetUcreti(55))  // 120
+}
